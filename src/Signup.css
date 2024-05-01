@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.sgcontainer {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.sgform input[type="text"],
+.sgform input[type="email"],
+.sgform input[type="password"],
+.sgform input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+.sgform input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.sgform input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.error {
+    font-size: small;
+    color: red;
+}
+
+.passinvalid{
+    font-size: small;
+    color: red;
+}
+
+.success-message{
+    color: green;
+    font-style: italic;
+}
+
+.sganc{
+    cursor: pointer;
+    text-decoration: underline;
+}

@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .mya{
+    z-index: 1;
+  }
+
+  #sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: right 0.4s ease-in-out;
+  }
+  
+  .profile {
+    padding: 20px;
+    color: #fff;
+  }
+  
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+    background-color: #aaa;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+  }
+  
+  .profile-info {
+    text-align: center;
+  }
+  
+  #sidebar.open {
+    right: 0;
+  }
+  
+  

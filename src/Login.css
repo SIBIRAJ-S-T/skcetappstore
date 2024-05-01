@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.lgcontainer {
+    margin: 20px auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.lgform input[type="text"],
+.lgform input[type="password"],
+.lgform input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+.lgform input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.lgform input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.lgerror{
+    color: red;
+    font-size: small;
+}
+
+.lganc{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.success{
+    color: green;
+    font-style: italic;
+}

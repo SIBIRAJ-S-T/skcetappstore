@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .box {
+    width: 120px;
+    height: 120px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .homegamesimage{
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+  }
+  
+  .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Additional styles for each box */
+  .box1 { background-color: #FF7171; }
+  .box2 { background-color: #FFA971; }
+  .box3 { background-color: #FFD371; }
+  /* Add more styles as needed for each box */
+  
+  .container a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
