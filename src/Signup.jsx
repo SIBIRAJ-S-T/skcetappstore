@@ -195,7 +195,7 @@ const Signup = () => {
 
 
             {/*To prevent user to right click or use ctrl+shift+I or etc*/}
-            <PreventInspect/>
+            
 
         </div>
     );

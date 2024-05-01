@@ -180,7 +180,7 @@ const Login = ({ setAuthStatus }) => {
             {loginSuccess && <p className="success">Login successful! Redirecting...</p>}
 
             {/*To prevent user to right click or use ctrl+shift+I or etc*/}
-            <PreventInspect/>
+            
 
         </div>
     );
