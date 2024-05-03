@@ -47,7 +47,7 @@ const HomeGames = () => {
             <hr />
             <div className="container">
                 {yourApps.map((yourApp, index) => (
-                    <a href={yourApp.appurl} rel="noopener noreferrer">
+                    <a href={yourApp.appurl} target='_blank' rel="noopener noreferrer">
                         <div key={index} className='box'>
                             <img src={yourApp.appicon} alt={`App Icon ${index}`} className='homegamesimage'/>
                         </div>
