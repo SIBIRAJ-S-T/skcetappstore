@@ -83,7 +83,7 @@ const Signup = () => {
  
      const signUp = async () => {
         try{
-         const res = await axios.post('http://ec2-13-201-23-227.ap-south-1.compute.amazonaws.com:8080/users', { username, email, password, browserName, osName, deviceName });
+         const res = await axios.post('https://skcetappthree.onrender.com/users', { username, email, password, browserName, osName, deviceName });
          console.log(res);
         }
         catch (error) {
@@ -100,7 +100,7 @@ const Signup = () => {
 
      const showUser = async () => {
         try{
-        const res = await axios.post('http://ec2-13-201-23-227.ap-south-1.compute.amazonaws.com:8080/showusers', { username, email});
+        const res = await axios.post('https://skcetappthree.onrender.com/showusers', { username, email});
         console.log(res);
         }
         catch (error) {
@@ -132,7 +132,7 @@ const Signup = () => {
         setUsername(value);
         setIsValidUsername(value === '' || isValid);
         try {
-            const res = await axios.get(`http://ec2-13-201-23-227.ap-south-1.compute.amazonaws.com:8080/checkUsername/${value}`);
+            const res = await axios.get(`https://skcetappthree.onrender.com/checkUsername/${value}`);
             setUsernameExists(res.data);
         } catch (error) {
             console.error('Error checking username:', error);
