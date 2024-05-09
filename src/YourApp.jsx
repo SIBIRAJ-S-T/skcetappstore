@@ -19,7 +19,7 @@ const YourApp = () => {
     useEffect(() => {
         const checkAppUrlExists = async () => {
             try {
-                const res = await axios.get(`http://localhost:8080/checkappurl/${appurl}`);
+                const res = await axios.get(`https://skcetappthree.onrender.com/checkappurl/${appurl}`);
                 setAppUrlExists(res.data);
             } catch (error) {
                 console.error('Error checking appurl:', error);
@@ -34,7 +34,7 @@ const YourApp = () => {
     const saveYourApp = async (e) => {
         e.preventDefault(); // Prevent the default form submission behavior
         try {
-            const res = await axios.post('http://localhost:8080/yourapp', { username, appurl, appname, appicon });
+            const res = await axios.post('https://skcetappthree.onrender.com/yourapp', { username, appurl, appname, appicon });
             console.log(res);
             setRegistrationSuccess(true);
     

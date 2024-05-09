@@ -35,7 +35,7 @@ const Front = () => {
         </div>
       </nav>
       <div className="fpcontainer">
-        <h1>Showcase Your App in <br/> SKCET App Store s</h1>
+        <h1>Showcase Your App in <br/> SKCET App Store</h1>
         <button onClick={GoSignup}>Get Started</button>
       </div>
       {/*To prevent user to right click or use ctrl+shift+I or etc*/}

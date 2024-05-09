@@ -29,7 +29,7 @@ function ProfileSidebar() {
   const fetchUserData = async () => {
     try {
       const username = localStorage.getItem('username'); // Get username from local storage
-      const res = await axios.get(`http://localhost:8080/getuser/${username}`);
+      const res = await axios.get(`https://skcetappthree.onrender.com/getuser/${username}`);
       setUserData(res.data);
     } catch (error) {
       console.error('Error fetching user data:', error);

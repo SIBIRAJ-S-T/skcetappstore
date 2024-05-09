@@ -13,7 +13,7 @@ const HomeGames = () => {
 
     const fetchYourApps = async () => {
         try {
-            const response = await fetch('http://localhost:8080/api/yourapp');
+            const response = await fetch('https://skcetappthree.onrender.com/api/yourapp');
             const data = await response.json();
             setYourApps(data);
         } catch (error) {

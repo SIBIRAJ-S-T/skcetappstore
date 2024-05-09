@@ -79,7 +79,7 @@ const Home = ({setAuthStatus}) => {
 
     const saveLogoutHistory = async () => {
         const username = localStorage.getItem('username');
-        const res = await axios.post('http://localhost:8080/logouthistory', { username, browserName, osName, deviceName });
+        const res = await axios.post('https://skcetappthree.onrender.com/logouthistory', { username, browserName, osName, deviceName });
         console.log(res);
     }
 
@@ -89,7 +89,7 @@ const Home = ({setAuthStatus}) => {
         const username = localStorage.getItem('username');
         if (username) {
             try {
-                await axios.delete(`http://localhost:8080/logout/${username}`);
+                await axios.delete(`https://skcetappthree.onrender.com/logout/${username}`);
                 saveLogoutHistory();
                 localStorage.removeItem('username');
                 setAuthStatus(false);
@@ -159,7 +159,7 @@ const Home = ({setAuthStatus}) => {
   useEffect(() => {
     const intervalId = setInterval(async () => {
       try {
-        const response = await axios.get('http://localhost:8080/liveusers/count');
+        const response = await axios.get('https://skcetappthree.onrender.com/liveusers/count');
         setUserCount(response.data);
         if(response.data===0){
             setAuthStatus(false);
