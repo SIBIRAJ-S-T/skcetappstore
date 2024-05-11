@@ -43,7 +43,7 @@ const HomeGames = () => {
             ))}
             </div>
             <hr />
-            <button className='yourappbutton' onClick={GoYourApp}>Launch your App</button>
+            <button className='yourappbutton' onClick={GoYourApp}>Show your App here</button>
             <hr />
             <div className="container">
                 {yourApps.map((yourApp, index) => (
