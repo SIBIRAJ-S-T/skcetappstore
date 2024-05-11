@@ -218,7 +218,7 @@ const Home = ({setAuthStatus}) => {
                         <a className="dropbtn">Settings</a>
                         <div className="dropdown-content">
                             <section>
-                                <option onClick={GoUpdate}><a href="#">Edit Profile</a></option>
+                                <option onClick={GoUpdate}><a href="#">Edit Password</a></option>
                                 <option onClick={GoDelete}><a href="#">Delete Account</a></option>
                                 <option onClick={logoutUser}><a href="#">Logout</a></option> {/* Call handleLogout function */}
                             </section>
