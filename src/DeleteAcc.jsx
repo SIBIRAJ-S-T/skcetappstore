@@ -45,8 +45,8 @@ const Login = ({setAuthStatus}) => {
             return;
         }
         try {
-            const res = await axios.delete(`https://skcetappthree2.onrender.com/${username}/${password}`);
-            const res2 = await axios.delete(`https://skcetappthree2.onrender.com/${username}`);
+            const res = await axios.delete(`https://skcetappthree2.onrender.com/deletename/${username}/${password}`);
+            const res2 = await axios.delete(`https://skcetappthree2.onrender.com/deletenameshowuser/${username}`);
             console.log(res.data);
             console.log(res2);
             if (res.data === "ok") {
