@@ -1,8 +1,12 @@
+.maincontainer{
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: linear-gradient(135deg, #6a11cb, #2575fc);
   }
   
   .box {
