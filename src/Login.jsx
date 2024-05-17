@@ -81,13 +81,13 @@ const Login = ({ setAuthStatus }) => {
     }, []); // Run once on component mount
 
     const saveHistory = async () => {
-        const res = await axios.post('https://skcetappthree.onrender.com/loginhistory', { username, browserName, osName, deviceName });
+        const res = await axios.post('https://skcetappthree2.onrender.com/loginhistory', { username, browserName, osName, deviceName });
         console.log(res);
     }
 
     const saveCurrentUser = async () => {
         try {
-            const res = await axios.post('https://skcetappthree.onrender.com/currentuserinsert', {username});
+            const res = await axios.post('https://skcetappthree2.onrender.com/currentuserinsert', {username});
             console.log(res);
         } catch (error) {
             if (error.response && error.response.status === 409) {
@@ -118,7 +118,7 @@ const Login = ({ setAuthStatus }) => {
 
     const Handle_Login = async (event) => {
         event.preventDefault();
-        const res = await axios.get(`https://skcetappthree.onrender.com/get/${username}/${password}`);
+        const res = await axios.get(`https://skcetappthree2.onrender.com/get/${username}/${password}`);
         console.log(res.data)
         if (res.data === "ok") {
             // Store username in local storage upon successful login

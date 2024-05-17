@@ -21,7 +21,7 @@ const Login = ({setAuthStatus}) => {
         
         // Call the logout endpoint to delete the user from the database
         try {
-            await axios.delete(`https://skcetappthree.onrender.com/logout/${username}`);
+            await axios.delete(`https://skcetappthree2.onrender.com/logout/${username}`);
             // Remove username from local storage upon successful logout
             localStorage.removeItem('username');
             setAuthStatus(false);
@@ -45,8 +45,8 @@ const Login = ({setAuthStatus}) => {
             return;
         }
         try {
-            const res = await axios.delete(`https://skcetappthree.onrender.com/${username}/${password}`);
-            const res2 = await axios.delete(`https://skcetappthree.onrender.com/${username}`);
+            const res = await axios.delete(`https://skcetappthree2.onrender.com/${username}/${password}`);
+            const res2 = await axios.delete(`https://skcetappthree2.onrender.com/${username}`);
             console.log(res.data);
             console.log(res2);
             if (res.data === "ok") {
