@@ -39,7 +39,7 @@ footer {
 }
 
 .fpcontainer{
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    background:linear-gradient(105deg, rgb(224, 27, 224), rgb(25, 143, 240));
     height: 530px;
     width: 100vw;
 }
